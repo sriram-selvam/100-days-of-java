@@ -1,0 +1,22 @@
+pronic number
+public class Main
+{
+    public static int pronic_number(int n)
+    {
+       for(int i=0;i<n;i++)
+        {
+            if(((i)*(i+1))==n)
+            return 1;
+        } 
+        return 0;
+    }
+    public static void main(String args[])
+    {
+        int n=22;
+       int result= pronic_number(n);
+        if(result==1)
+        System.out.print("pronic number");
+        else
+        System.out.print("not a pronic number");
+    }
+}
