@@ -1,0 +1,52 @@
+// Data member are not used to achieve the method overriding concept:
+
+public class Main
+{
+  
+  int r=10;
+
+    public void run()
+   
+ {
+ 
+       
+        System.out.println("run over me");
+    
+}
+
+
+    public static void main(String args[])
+  
+  {
+  
+      
+        Main s=new vehicle();
+   
+     s.run();
+  
+      Main obj= new vehicle();
+  
+      System.out.println(obj.r);
+ 
+       
+    }
+
+}
+
+class vehicle extends Main
+{
+ 
+   int r=10;
+  
+  public void run()
+    
+{
+        
+   
+     System.out.println("run me");
+   
+ }
+
+}
+
+// Method overloading is about same method name and different arguments in the paramters..
